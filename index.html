@@ -1,0 +1,55 @@
+<!-- 유저피드 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/section.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <input class="header__title" src="image/유저피드/로고.png" type="image" onclick="location.href='index.html'">
+            <!-- <img class="header__title" src="image/유저피드/로고.png" alt=""> -->
+           
+            <div class="header__center">
+                <form class="header__form" onsubmit="return false">
+                    <input class="header__input--text" placeholder="">
+                    <input class="header__input--button" src="image/유저피드/돋보기.png" type="image">
+                </form>
+                <!-- <input class="header__input--text" placeholder="검색어를 입력하세요">
+                <input class="header__input--button" src="image/유저피드/돋보기.png" type="image"> -->
+            </div>
+
+            <div class="header__end">
+                <li>
+                    <button class="header__end--btn" onclick="location.href='store.html'">스토어</button>
+                </li>
+                <li>
+                    <button class="header__end--btn" onclick="location.href='qa.html'">질문게시판</button>
+                </li>
+                <li>
+                    <button class="custom-btn login" onclick="location.href='login.html'">로그인</button>
+                </li>
+                <li>
+                    <button class="custom-btn register" onclick="location.href='register.html'"><span>회원가입</span></button>
+                </li>
+            </div>
+        </div>
+    </header>
+
+
+    <section>
+        <h1 style="font-size: 50px;">메인 화면 상단</h1>
+
+        <div class="userfeed"></div>
+    </section>
+
+    <footer>
+    </footer>
+</body>
+</html>
