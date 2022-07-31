@@ -8,3 +8,11 @@ section {
     /* background-size: 577px 577px; */
     /* background-repeat: no-repeat; */
 }
+
+.backgroundtext {
+    font-family: 'Noto Sans KR';
+    left:156px;
+    top: 310px;
+    font-size: 20px;
+    font-weight: bold;
+}

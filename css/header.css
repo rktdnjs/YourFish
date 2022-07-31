@@ -58,11 +58,10 @@
     border-top:none;
     border-left:none;
     border-right:none;
-    /* border-radius: 2px 0 0 2px; */
 }
 
 .header__input--button {
-    width: 14%;
+    width: 10%;
 }
 
 .header__end {
