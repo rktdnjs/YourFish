@@ -1,10 +1,4 @@
-@font-face {
-    font-family: 'SeoulNamsanM';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulNamsanM.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
+/* 상단 네비게이션 바 CSS */
 .header {
     position: fixed;
     top:0;
@@ -213,6 +207,14 @@ button {
    width: 100%;
  }
  
+ @font-face {
+  font-family: 'SeoulNamsanM';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulNamsanM.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
  /* 너비가 좀 줄어들면 검색창 사라짐 */
  @media screen and (max-width: 1200px) {
     .header__center {
