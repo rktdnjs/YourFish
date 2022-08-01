@@ -5,7 +5,7 @@
     left: 0;
     width: 100%;
     background-color: white;
-    /*다른 요소랑 겹쳤을 때 상대적으로 높게 보이도록 하기 위함 */
+    /* z-index는 다른 요소랑 겹쳤을 때 상대적으로 높게 보이도록 하기 위함 */
     z-index: 20;
 }
 
@@ -16,13 +16,11 @@
     height: 114px;
     padding-left: 5%;
     padding-right: 5%;
-    /* border-bottom:1px solid black ; */
 }
 
 .header__title {
     width: 230px;
     height: 45px;
-
     /* width: 16%; */
     /* 5:1비율을 주었음 */
     /* aspect-ratio: 5/1; */
@@ -44,7 +42,6 @@
 }
 
 .header__input--text {
-    /* 검색창 너비만큼만 빼준다 */
     width: 84%;
     height: 40px;
     padding: 0 6px;
@@ -67,6 +64,13 @@
     list-style: none;
 }
 
+/* 네비 상단 버튼 공통 CSS */
+/* button {
+  margin: 20px;
+  outline: none;
+} */
+
+/* 네비 상단 버튼 공통 CSS */
 .header__end--btn {
     border: none;
     background-color: transparent;
@@ -74,6 +78,8 @@
     font-family: "SeoulNamsanM";
     font-size: 18px;
     padding: 10px 15px;
+    margin: 20px;
+    outline: none;
 }
 
 /* 스토어 & 질문게시판 */
@@ -88,11 +94,6 @@
     transform: scaleX(1);/*a 속성에 hover시 after를 기존 크기로 변경*/
  }
 
-/* 로그인&회원가입 버튼 공통 CSS */
-button {
-    margin: 20px;
-    outline: none;
-}
 
 .custom-btn {
     width: 130px;

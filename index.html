@@ -15,15 +15,12 @@
     <header class="header">
         <div class="header__wrapper">
             <input class="header__title" src="image/유저피드/로고.png" type="image" onclick="location.href='index.html'">
-            <!-- <img class="header__title" src="image/유저피드/로고.png" alt=""> -->
            
             <div class="header__center">
                 <form class="header__form" onsubmit="return false">
                     <input class="header__input--text" placeholder="검색어를 입력해주세요!">
                     <input class="header__input--button" src="image/유저피드/돋보기.png" type="image">
                 </form>
-                <!-- <input class="header__input--text" placeholder="검색어를 입력하세요">
-                <input class="header__input--button" src="image/유저피드/돋보기.png" type="image"> -->
             </div>
 
             <div class="header__end">
@@ -33,11 +30,13 @@
                 <li>
                     <button class="header__end--btn" onclick="location.href='qa.html'">질문게시판</button>
                 </li>
+                <!-- 아래 custom버튼의 경우 css적용에서 바꾸려고 했는데 버그가 많이 생겨서 부득이하게 그냥 두었습니다 ㅠㅠ -->
+                <!-- 클래스가 총 3개 적용되었다구 보시면 됩니당 -->
                 <li>
-                    <button class="custom-btn login" onclick="location.href='login.html'">로그인</button>
+                    <button class="header__end--btn custom-btn login" onclick="location.href='login.html'">로그인</button>
                 </li>
                 <li>
-                    <button class="custom-btn register" onclick="location.href='register.html'"><span>회원가입</span></button>
+                    <button class="header__end--btn custom-btn register" onclick="location.href='register.html'"><span>회원가입</span></button>
                 </li>
             </div>
         </div>
