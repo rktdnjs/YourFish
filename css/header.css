@@ -65,12 +65,6 @@
 }
 
 /* 네비 상단 버튼 공통 CSS */
-/* button {
-  margin: 20px;
-  outline: none;
-} */
-
-/* 네비 상단 버튼 공통 CSS */
 .header__end--btn {
     border: none;
     background-color: transparent;
