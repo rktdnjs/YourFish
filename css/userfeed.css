@@ -13,7 +13,7 @@ section {
     display:flex;
     flex-direction: column;
     width: 4%;
-    top: 18%;
+    top: 20%;
     right: 3%;
     background-color: white;
     border-radius: 10px;
@@ -63,6 +63,7 @@ section {
     left: 10%;
     top: 30%;
     font-weight: bold;
+    z-index:15;
 }
 
 .section__userfeed__backgroundtext1 {
@@ -74,26 +75,34 @@ section {
     font-size: 3vmax;
 }
 
-/* .section__userfeed__backgroundimage1 {
+.section__userfeed__backgroundimage1 {
+    position: relative;
+    bottom: 40%;
+    width: 50vw;
+    height: 50vw;
+    z-index: 10;
+}
+
+.section__userfeed__backgroundimage1 {
     position: relative;
     bottom: 33%;
-    width: 37.5%;
-    height: 150%;
+    width: 40vw;
+    height: 60vw;
 }
 
 .section__userfeed__backgroundimage2 {
     position: absolute;
     transition: all 0.7s ease-in-out;
     margin-top: 114px;
-    right: 9%;
-    top: 1%;
-    width: 28%;
-    height: 49%;
+    top: 1.9%;
+    right: 15%;
+    width: 28vw;
+    height: 32vw;
 }
 
 .section__userfeed__backgroundimage2:hover {
     transform: scale(1.15);
-} */
+}
 
 .section__userfeed__main {
     width: 80%;
@@ -104,6 +113,19 @@ section {
     background-color:#D9D9D9;
     box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1);
     border-radius: 10px 10px 0 0;
+}
+
+.section__userfeed__main__article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.section__userfeed__main__article--feed {
+    /* 커서 옵션은 나중에 제거 */
+    cursor: pointer;
+    margin-top: 5%;
+    width: 30%
 }
 
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
