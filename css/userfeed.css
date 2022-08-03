@@ -110,9 +110,8 @@ section {
     font-size: 1.5vmax;
     font-weight: bold;
     text-align: center;
-    padding-top: 2%;
-    padding-bottom: 3%;
-    border-bottom: 3px dashed black
+    /* padding-top: 1%; */
+    /* border-bottom: 3px dashed black */
 }
 
 .section__userfeed__main__article {
@@ -124,7 +123,7 @@ section {
 .section__userfeed__main__article--feed {
     /* 커서 옵션은 나중에 제거 */
     cursor: pointer;
-    margin-top: 5%;
+    margin-top: 3%;
     width: 30%
 }
 
