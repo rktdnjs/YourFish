@@ -38,6 +38,8 @@ const AxiosTest = () => {
     
     return (
         <div>
+            <h1>Axios 테스트</h1>
+            <hr/>
             <h3>Axios - GET 요청</h3>
             <button onClick={getResult}>GET</button>
             <h3>Axios - POST 요청</h3>

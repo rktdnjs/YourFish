@@ -1,13 +1,15 @@
 import React from 'react';
 import AxiosTest from './pages/AxiosTest';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Nav from './components/Nav';
 
 function App() {
   return (
-    <div>
-      <h1>Axios 테스트</h1>
-      <hr/>
-      <AxiosTest/>
-    </div>
+      <Router>
+        <Routes>
+          <Route path='/' element={<AxiosTest/>}/>
+        </Routes>
+      </Router>
   );
 }
 
