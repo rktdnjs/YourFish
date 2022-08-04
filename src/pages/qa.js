@@ -1,9 +1,9 @@
 import React from 'react'
 
-const qa = () => {
+const QA = () => {
   return (
-    <div>qa</div>
+    <div>QA</div>
   )
 }
 
-export default qa
+export default QA

@@ -1,4 +1,5 @@
 // axios 테스트용
+// 요친구는 삭제하셔도 됩니다 ^^
 import React, { useEffect } from "react";
 import axios from 'axios';
 

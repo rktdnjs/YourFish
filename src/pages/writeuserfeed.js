@@ -1,9 +1,9 @@
 import React from 'react'
 
-const writeuserfeed = () => {
+const WriteUserFeed = () => {
   return (
-    <div>writeuserfeed</div>
+    <div>WriteUserFeed</div>
   )
 }
 
-export default writeuserfeed
+export default WriteUserFeed

@@ -1,19 +1,5 @@
-manifest.json 파일중에
-"icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
-그냥 오류가 거슬려서 빼버림
+- CSS파일이 들어갈 styles폴더에는 전부 소문자로 구성하여 만들었습니다!
+- 페이지들은 전부 첫글자 대문자 & camelCase 적용해서 만들었습니다!
+- 폴더들은 전부 소문자를 적용하였습니다!
+- 이미지폴더의 경우, 전부 소문자를 원칙으로 하되 구분이 필요할경우 하이픈(-)을 사용하였습니다!
+- react-router-dom@6 & axios & styled-component 가 전부 설치되어 있습니다! (package-lock.json 참고해주세용)

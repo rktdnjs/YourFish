@@ -1,9 +1,9 @@
 import React from "react";
 
-const userfeed = () => {
+const UserFeed = () => {
     return (
         <h1>제목</h1>
     )
 }
 
-export default userfeed;
+export default UserFeed;
