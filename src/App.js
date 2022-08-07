@@ -15,6 +15,10 @@ function App() {
         <Nav/>
         <Routes>
           <Route path='/' element={<UserFeed/>}/>
+          <Route path='/QA' element={<QA/>}/>
+          <Route path='/Store' element={<Store/>}/>
+          <Route path='/Login' element={<Login/>}/>
+          <Route path='/Register' element={<Register/>}/>
         </Routes>
       </Router>
   );

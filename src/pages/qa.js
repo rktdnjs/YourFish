@@ -1,8 +1,14 @@
 import React from 'react'
+import '../styles/section.css'
 
 const QA = () => {
+  
   return (
-    <div>QA</div>
+    <div>
+      <section>
+        <button>123</button>
+      </section>
+    </div>
   )
 }
 

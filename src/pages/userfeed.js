@@ -12,44 +12,43 @@ import feed8 from '../images/userfeed/feed8.png'
 import feed9 from '../images/userfeed/feed9.png'
 import gradient from '../images/userfeed/gradient-left.png'
 import background from '../images/userfeed/back-image.png'
-import '../components/TopScroll'
 import '../styles/userfeed.css'
 
 const UserFeed = () => {
-    function clickme() {
+    const moveToTop = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
     return (
         <>
-            <section class="section">
-            <div class="section__userfeed__nav1">
-                <input class="section__userfeed__nav1--write" src={write} type="image"/>
-                <input class="section__userfeed__nav1--top" src={arrow} onClick={clickme()} type="image"/>
+            <section className="section">
+            <div className="section__userfeed__nav1">
+                <input className="section__userfeed__nav1--write" src={write} type="image"/>
+                <input className="section__userfeed__nav1--top" src={arrow} onClick={moveToTop} type="image"/>
             </div>
-            <div class="section__userfeed__background">
-                <div class="section__userfeed__backgroundtext">
-                    <div class="section__userfeed__backgroundtext1">반려어 키우다 궁금할 때?</div>
-                    <div class="section__userfeed__backgroundtext2">너의 반려어는 이용하자!</div>
+            <div className="section__userfeed__background">
+                <div className="section__userfeed__backgroundtext">
+                    <div className="section__userfeed__backgroundtext1">반려어 키우다 궁금할 때?</div>
+                    <div className="section__userfeed__backgroundtext2">너의 반려어는 이용하자!</div>
                 </div>
-                <img class="section__userfeed__backgroundimage1" src={gradient}/>
-                <img class="section__userfeed__backgroundimage2" src={background}/>
+                <img className="section__userfeed__backgroundimage1" src={gradient}/>
+                <img className="section__userfeed__backgroundimage2" src={background}/>
             </div>
 
-            <div class="section__userfeed__main">
-                <div class="section__userfeed__main--head">
+            <div className="section__userfeed__main">
+                <div className="section__userfeed__main--head">
                     최신 게시글
                 </div>
-                <div class="section__userfeed__main__article">
-                    <img class="section__userfeed__main__article--feed" src={feed1}/>
-                    <img class="section__userfeed__main__article--feed" src={feed2}/>
-                    <img class="section__userfeed__main__article--feed" src={feed3}/>
-                    <img class="section__userfeed__main__article--feed" src={feed4}/>
-                    <img class="section__userfeed__main__article--feed" src={feed5}/>
-                    <img class="section__userfeed__main__article--feed" src={feed6}/>
-                    <img class="section__userfeed__main__article--feed" src={feed7}/>
-                    <img class="section__userfeed__main__article--feed" src={feed8}/>
-                    <img class="section__userfeed__main__article--feed" src={feed9}/>
+                <div className="section__userfeed__main__article">
+                    <img className="section__userfeed__main__article--feed" src={feed1}/>
+                    <img className="section__userfeed__main__article--feed" src={feed2}/>
+                    <img className="section__userfeed__main__article--feed" src={feed3}/>
+                    <img className="section__userfeed__main__article--feed" src={feed4}/>
+                    <img className="section__userfeed__main__article--feed" src={feed5}/>
+                    <img className="section__userfeed__main__article--feed" src={feed6}/>
+                    <img className="section__userfeed__main__article--feed" src={feed7}/>
+                    <img className="section__userfeed__main__article--feed" src={feed8}/>
+                    <img className="section__userfeed__main__article--feed" src={feed9}/>
                 </div>
             </div>
             </section>
