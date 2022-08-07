@@ -31,10 +31,10 @@ const Login = () => {
   };
 
   // 임시 아이디 비번
-  // 서버 데이터와 입력한 아이디 & 비번이 일치 시 로그인 성공 후 메인화면으로 이동
+  // 서버 데이터와 입력한 아이디 & 비번이 일치 시 로그인 성공 후 메인화면으로 이동(근데 유지는 아직 x)
   // 이후 로그인상태를 유지하기 위해선 일종의 토큰정보가 필요할것
   const realId = "12345@naver.com"
-  const realPw = "12345678"
+  const realPw = "12345678@a"
   const clickButton = () => {
     if (realId == id) {
     if (realPw == pw) {
