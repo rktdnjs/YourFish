@@ -49,10 +49,11 @@
     border-top:none;
     border-left:none;
     border-right:none;
+    outline: none;
 }
 
 .header__input--button {
-    width: 10%;
+    width: 30px;
 }
 
 .header__end {

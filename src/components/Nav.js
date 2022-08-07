@@ -1,32 +1,35 @@
 import React from 'react'
 import '../styles/nav.css'
+import logo from '../images/userfeed/logo.png'
+import search from '../images/userfeed/search.png'
+import { Link } from 'react-router-dom'
 
 const Nav = () => {
   return (
     <div>
         <header class="header">
         <div class="header__wrapper">
-            <input class="header__title" src="../images/userfeed/logo.png" type="image" onclick="location.href='index.html'"/>
+            <Link to="/"><img class="header__title" src={logo}/></Link>
            
             <div class="header__center">
                 <form class="header__form" onsubmit="return false">
                     <input class="header__input--text" placeholder="검색어를 입력해주세요!"/>
-                    <input class="header__input--button" src="image/유저피드/돋보기.png" type="image"/>
+                    <Link to="/Search"><input class="header__input--button" src={search} type="image"/></Link>
                 </form>
             </div>
 
             <div class="header__end">
                 <li>
-                    <button class="header__end--btn" onclick="location.href='store.html'">스토어</button>
+                    <button class="header__end--btn"><Link to="/Store" style={{textDecoration:'none', color:'inherit'}}>스토어</Link></button>
                 </li>
                 <li>
-                    <button class="header__end--btn" onclick="location.href='qa.html'">질문게시판</button>
+                    <button class="header__end--btn"><Link to="/QA" style={{textDecoration:'none', color:'inherit'}}>질문게시판</Link></button>
                 </li>
                 <li>
-                    <button class="header__end--btn custom-btn login" onclick="location.href='login.html'">로그인</button>
+                    <button class="header__end--btn custom-btn login"><Link to="/Login" style={{textDecoration:'none', color:'inherit'}}>로그인</Link></button>
                 </li>
                 <li>
-                    <button class="header__end--btn custom-btn register" onclick="location.href='register.html'"><span>회원가입</span></button>
+                    <button class="header__end--btn custom-btn register"><span><Link to="/Register" style={{textDecoration:'none', color:'inherit'}}>회원가입</Link></span></button>
                 </li>
             </div>
         </div>
