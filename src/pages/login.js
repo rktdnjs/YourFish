@@ -35,6 +35,7 @@ const Login = () => {
   // 이후 로그인상태를 유지하기 위해선 일종의 토큰정보가 필요할것
   const realId = "12345@naver.com"
   const realPw = "12345678@a"
+  
   const clickButton = () => {
     if (realId == id) {
     if (realPw == pw) {
@@ -58,11 +59,11 @@ const Login = () => {
                 </div>
             <div className="section__login__center">
                 <input className="section__login__center--logo" src={logo} type="image"/>
-                <div className="section__login__center--id">이메일:<br/>
+                <div className="section__login__center--id">이메일<br/>
                     <input onChange={idInput} onKeyUp={changeButton} placeholder='아이디를 입력해주세요' className="section__login__center--idinput"/>
                 </div>
-                <div className="section__login__center--pw">비밀번호:<br/>
-                    <input onChange={pwInput} onKeyUp={changeButton} placeholder='비밀번호를 입력해주세요' className="section__login__center--idinput"/>
+                <div className="section__login__center--pw">비밀번호<br/>
+                    <input onChange={pwInput} onKeyUp={changeButton} maxLength="16" placeholder='비밀번호를 입력해주세요' className="section__login__center--idinput"/>
                 </div>
                 <button onClick={clickButton} disabled={button} className="section__login__center--loginbtn">로그인</button>
                 <div className="section__login__center--options">
