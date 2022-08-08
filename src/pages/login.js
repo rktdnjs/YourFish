@@ -36,7 +36,7 @@ const Login = () => {
   const realId = "12345@naver.com"
   const realPw = "12345678@a"
 
-  const clickButton = () => {
+  const signIn = () => {
     if (realId == id) {
     if (realPw == pw) {
       goToMain();
@@ -65,7 +65,7 @@ const Login = () => {
                 <div className="section__login__center--pw">비밀번호<br/>
                     <input onChange={pwInput} onKeyUp={changeButton} type="password" maxLength="16" placeholder='비밀번호를 입력해주세요' className="section__login__center--idinput"/>
                 </div>
-                <button onClick={clickButton} disabled={button} className="section__login__center--loginbtn">로그인</button>
+                <button onClick={signIn} disabled={button} className="section__login__center--loginbtn">로그인</button>
                 <div className="section__login__center--options">
                     <div className="section__login__center--searchid">아이디 찾기</div>|
                     <div className="section__login__center--searchpw">비밀번호 찾기</div>|

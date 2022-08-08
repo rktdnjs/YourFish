@@ -56,6 +56,10 @@ const Register = () => {
     .then((response) => {
       console.log(response);
       if(response.status === 201) {
+        localStorage.setItem("userid", id);
+        localStorage.setItem("userpw", pw);
+        localStorage.setItem("username", name);
+        localStorage.setItem("userNickname", nickname);
         alert('회원가입이 완료되었습니다! 환영합니다 :)');
         goToMain(); 
       }

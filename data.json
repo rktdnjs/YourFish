@@ -21,6 +21,20 @@
       "username": "김김김",
       "userNickname": "김밥먹고싶다",
       "id": 4
+    },
+    {
+      "userid": "yourfish@naver.com",
+      "userpw": "fishfish1!",
+      "username": "너의반려어는",
+      "userNickname": "김밥좋아",
+      "id": 5
+    },
+    {
+      "userid": "yourfish1@naver.com",
+      "userpw": "fishfish2@",
+      "username": "너의반려어는2",
+      "userNickname": "김밥좋아요",
+      "id": 6
     }
   ]
 }
