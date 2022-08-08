@@ -31,7 +31,7 @@ const Register = () => {
 
   //이메일 & 패스워드 & 닉네임 유효성 검사, 조건은 아래 폼 문구에 있는 내용과 동일
   //이름은 최소 2글자 이상 시에만 버튼 활성화
-  const nicknameValidation = /^[a-z0-9_-]{4,16}$/;
+  const nicknameValidation = /^[가-힣a-z]{4,16}$/;
   const emailValidation = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/;
   const pwValidation = /^.*(?=^.{8,16}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[~,!,@,#,$,*,(,),=,+,_,.,|]).*$/;
   const [button, setButton] = useState(true);
@@ -45,18 +45,22 @@ const Register = () => {
     navigate('/');
   };
 
+  // 일단 임시 서버 열어서 사용함
   const signUp = () => {
-    axios.post("URL" , {
+    axios.post("http://localhost:4000/posts" , {
       userid : id,
-      passwd : pw,
-      name : name,
-      nickname : nickname
-    }).then((response) => {
-      
+      userpw : pw,
+      username : name,
+      userNickname : nickname
     })
-  
-    alert('회원가입이 완료되었습니다! 환영합니다 :)');
-    goToMain();   
+    .then((response) => {
+      console.log(response);
+      if(response.status === 201) {
+        alert('회원가입이 완료되었습니다! 환영합니다 :)');
+        goToMain(); 
+      }
+    })
+    .catch((error) => console.log(error.response));
   }
   
   return (
@@ -76,15 +80,15 @@ const Register = () => {
                     <input onChange={idInput} onKeyUp={changeButton} placeholder='아이디를 입력해주세요' className="section__login__center--idinput"/>
                 </div>
                 <div className="section__login__center--pw"><span>비밀번호</span><span className='section__login__center--side'>영문 대소문자/숫자/특수문자 포함 8자~16자</span><br/>
-                    <input onChange={pwInput} onKeyUp={changeButton} maxLength="16" placeholder='비밀번호를 입력해주세요' className="section__login__center--idinput"/>
+                    <input onChange={pwInput} onKeyUp={changeButton} maxLength="16" type="password" placeholder='비밀번호를 입력해주세요' className="section__login__center--idinput"/>
                 </div>
                 <div className="section__login__center--pw">비밀번호 확인<br/>
-                    <input onChange={repwInput} onKeyUp={changeButton} maxLength="16" placeholder='비밀번호를 다시 한 번 입력해주세요' className="section__login__center--idinput"/>
+                    <input onChange={repwInput} onKeyUp={changeButton} maxLength="16" type="password" placeholder='비밀번호를 다시 한 번 입력해주세요' className="section__login__center--idinput"/>
                 </div>
                 <div className="section__login__center--pw">이름<br/>
                     <input onChange={nameInput} onKeyUp={changeButton} placeholder='이름을 입력해주세요' className="section__login__center--idinput"/>
                 </div>
-                <div className="section__login__center--pw"><span>닉네임</span><span className='section__login__center--side1'>영문 소문자 또는 숫자 포함 4자~16자</span><br/>
+                <div className="section__login__center--pw"><span>닉네임</span><span className='section__login__center--side1'>영문 소문자&한글 아무렇게 4자~16자</span><br/>
                     <input onChange={nicknameInput} onKeyUp={changeButton} maxLength="16" placeholder='닉네임을 입력해주세요' className="section__login__center--idinput"/>
                 </div>
                 <button disabled={button} onClick={signUp} className="section__login__center--loginbtn">회원가입</button>

@@ -45,7 +45,7 @@ const Login = () => {
       alert('아이디 혹은 비밀번호가 일치하지 않습니다.');
     }
   }
-  
+
   return (
     <div>
        <section>
@@ -63,7 +63,7 @@ const Login = () => {
                     <input onChange={idInput} onKeyUp={changeButton} placeholder='아이디를 입력해주세요' className="section__login__center--idinput"/>
                 </div>
                 <div className="section__login__center--pw">비밀번호<br/>
-                    <input onChange={pwInput} onKeyUp={changeButton} maxLength="16" placeholder='비밀번호를 입력해주세요' className="section__login__center--idinput"/>
+                    <input onChange={pwInput} onKeyUp={changeButton} type="password" maxLength="16" placeholder='비밀번호를 입력해주세요' className="section__login__center--idinput"/>
                 </div>
                 <button onClick={clickButton} disabled={button} className="section__login__center--loginbtn">로그인</button>
                 <div className="section__login__center--options">
