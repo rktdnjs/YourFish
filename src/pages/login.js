@@ -1,4 +1,5 @@
 import React from 'react'
+import axios from 'axios'
 import '../styles/login.css'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
@@ -30,21 +31,43 @@ const Login = () => {
     navigate('/');
   };
 
-  // 임시 아이디 비번
   // 서버 데이터와 입력한 아이디 & 비번이 일치 시 로그인 성공 후 메인화면으로 이동(근데 유지는 아직 x)
   // 이후 로그인상태를 유지하기 위해선 일종의 토큰정보가 필요할것
-  const realId = "12345@naver.com"
-  const realPw = "12345678@a"
-
+  // JWT로 유저 인증 방식, 제대로 작동하지 않을 수도 있음
   const signIn = () => {
-    if (realId == id) {
-    if (realPw == pw) {
-      goToMain();
-      }
-    } else {
-      alert('아이디 혹은 비밀번호가 일치하지 않습니다.');
-    }
+    const data = {
+      userid : id,
+      userpw : pw,
+    };
+    axios.post('타겟 URL', data)
+    .then(response => {
+      const { accessToken } = response.data;
+
+      // API 요청하는 콜마다 헤더에 accessToken 담아 보내도록 설정
+      axios.defaults.headers.common['Authorization'] = `Bearer ${accessToken}`;
+
+      // accessToken을 localStorage, cookie 등에 저장하지 않는다!
+    }).catch(error => {
+      console.log(error.response.data);
+      alert("이메일 혹은 비밀번호를 확인하세요.")
+    });
   }
+
+  // JWT방식 x
+  // const signIn2 = () => {
+  //   axios.post('타겟 URL', { 
+  //       userid: id,
+  //       userpw: pw, 
+  //   })
+  //     .then(response => {
+  //       if (response.message === 'SUCCESS') {
+  //         window.localStorage.setItem('token',response.access_token);
+  //         goToMain();
+  //       } else {
+  //         alert('아이디 또는 비밀번호가 일치하지 않습니다.');
+  //       }
+  //     });
+  // };
 
   return (
     <div>

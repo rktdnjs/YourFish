@@ -45,6 +45,7 @@ const Register = () => {
     navigate('/');
   };
 
+  // 계정 정보 중복은 어떻게 해결?
   // 일단 임시 서버 열어서 사용함
   const signUp = () => {
     axios.post("http://localhost:4000/posts" , {
