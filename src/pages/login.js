@@ -35,7 +35,7 @@ const Login = () => {
   // 이후 로그인상태를 유지하기 위해선 일종의 토큰정보가 필요할것
   const realId = "12345@naver.com"
   const realPw = "12345678@a"
-  
+
   const clickButton = () => {
     if (realId == id) {
     if (realPw == pw) {
@@ -45,7 +45,7 @@ const Login = () => {
       alert('아이디 혹은 비밀번호가 일치하지 않습니다.');
     }
   }
-
+  
   return (
     <div>
        <section>

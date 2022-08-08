@@ -5,14 +5,16 @@ import Store from './pages/Store';
 import QA from './pages/QA';
 import Login from './pages/Login';
 import Register from './pages/Register';
-import Main from './pages/mypage/Main';
+import MyPage from './pages/mypage/MyPage';
 import UserFeed from './pages/UserFeed';
 import './styles/reset.module.css';
+import LoginNav from './components/LoginNav';
 
 function App() {
   return (
       <Router>
         <Nav/>
+        {/* <LoginNav/> */}
         <Routes>
           <Route path='/' element={<UserFeed/>}/>
           <Route path='/QA' element={<QA/>}/>

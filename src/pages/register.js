@@ -4,6 +4,7 @@ import sidefish from '../images/login/fish.png'
 import logo from '../images/userfeed/logo.png'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import axios from 'axios'
 
 const Register = () => {
   let [id, setId] = useState('');
@@ -44,11 +45,20 @@ const Register = () => {
     navigate('/');
   };
 
-  const clickButton = () => {
+  const signUp = () => {
+    axios.post("URL" , {
+      userid : id,
+      passwd : pw,
+      name : name,
+      nickname : nickname
+    }).then((response) => {
+      
+    })
+  
     alert('회원가입이 완료되었습니다! 환영합니다 :)');
     goToMain();   
-    }
-
+  }
+  
   return (
     <div>
        <section>
@@ -77,7 +87,7 @@ const Register = () => {
                 <div className="section__login__center--pw"><span>닉네임</span><span className='section__login__center--side1'>영문 소문자 또는 숫자 포함 4자~16자</span><br/>
                     <input onChange={nicknameInput} onKeyUp={changeButton} maxLength="16" placeholder='닉네임을 입력해주세요' className="section__login__center--idinput"/>
                 </div>
-                <button disabled={button} onClick={clickButton} className="section__login__center--loginbtn">회원가입</button>
+                <button disabled={button} onClick={signUp} className="section__login__center--loginbtn">회원가입</button>
             </div>
           </div>
       </section>
