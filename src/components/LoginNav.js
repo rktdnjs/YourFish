@@ -3,7 +3,7 @@ import '../styles/nav.css'
 import logo from '../images/userfeed/logo.png'
 import search from '../images/userfeed/search.png'
 import { Link } from 'react-router-dom'
-//로그인 이후 보이는 네비바
+//로그인 이후 보이는 네비바, 사용x
 
 const LoginNav = () => {
   return (

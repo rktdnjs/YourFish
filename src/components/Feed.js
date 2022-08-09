@@ -1,23 +1,12 @@
 import React from 'react'
-import styled from 'styled-components'
 
+// 이 친구는 아직 사용x
 const Feed = () => {
 
   return (
-    <Container>
-        
-    </Container>
+    <div>
+    </div>
   )
 }
-
-const Container = styled.div`
-    background-color: #eafcff;
-    margin-top:90px;
-    height:1000px;
-    width:100%
-`
-const FeedContainer = styled.button`
-  cursor:pointer;
-`
 
 export default Feed

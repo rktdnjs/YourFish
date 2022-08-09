@@ -15,7 +15,6 @@ const Login = () => {
   const pwInput = (e) => {
     setPw(e.target.value)
   }
-
   //아이디 & 비밀번호 유효성 검사
   //아이디에 @가 포함되어있는지, 비밀번호는 8글자 이상일때 disabled된 버튼이 활성화됨
   //이메일 : @를 포함한 영문, 숫자
@@ -35,39 +34,44 @@ const Login = () => {
   // 이후 로그인상태를 유지하기 위해선 일종의 토큰정보가 필요할것
   // JWT로 유저 인증 방식, 제대로 작동하지 않을 수도 있음
   const signIn = () => {
-    const data = {
-      userid : id,
-      userpw : pw,
-    };
-    axios.post('타겟 URL', data)
+    axios.post('http://localhost:4000/posts', {
+      email : id,
+      password : pw,
+    })
     .then(response => {
-      const { accessToken } = response.data;
-
-      // API 요청하는 콜마다 헤더에 accessToken 담아 보내도록 설정
-      axios.defaults.headers.common['Authorization'] = `Bearer ${accessToken}`;
-
-      // accessToken을 localStorage, cookie 등에 저장하지 않는다!
+      // console.log(response)
+      if(id == localStorage.getItem("userid") && pw == localStorage.getItem("userpw")) {
+        alert(`로그인 완료! ${localStorage.getItem("userNickname")}님 어서오세요!!`);
+        localStorage.setItem("회원토큰", "회원토큰");
+        goToMain();
+      }
+      else {
+        alert("이메일 혹은 비밀번호를 다시 확인해주세요.")
+      }
     }).catch(error => {
-      console.log(error.response.data);
-      alert("이메일 혹은 비밀번호를 확인하세요.")
+      console.log(error.response);
+      alert("이메일 혹은 비밀번호를 다시 확인하세요.")
     });
   }
 
-  // JWT방식 x
-  // const signIn2 = () => {
-  //   axios.post('타겟 URL', { 
-  //       userid: id,
-  //       userpw: pw, 
+  // JWT방식(작동 미확인)
+  // const signIn = () => {
+  //   axios.post('http://localhost:4000/posts', {
+  //     email : id,
+  //     password : pw,
   //   })
-  //     .then(response => {
-  //       if (response.message === 'SUCCESS') {
-  //         window.localStorage.setItem('token',response.access_token);
-  //         goToMain();
-  //       } else {
-  //         alert('아이디 또는 비밀번호가 일치하지 않습니다.');
-  //       }
-  //     });
-  // };
+  //   .then(response => {
+  //     const { accessToken } = response.data;
+
+  //     // API 요청하는 콜마다 헤더에 accessToken 담아 보내도록 설정
+  //     axios.defaults.headers.common['Authorization'] = `Bearer ${accessToken}`;
+
+  //     // accessToken을 localStorage, cookie 등에 저장하지 않는다!
+  //   }).catch(error => {
+  //     console.log(error.response);
+  //     alert("이메일 혹은 비밀번호를 확인하세요.")
+  //   });
+  // }
 
   return (
     <div>

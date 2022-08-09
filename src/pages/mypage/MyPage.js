@@ -1,8 +1,15 @@
 import React from 'react'
+import '../../styles/section.css'
 
 const MyPage = () => {
   return (
-    <div>MyPage</div>
+    <div>
+        <section>
+          <div className="section__main">
+            <p>마이페이지!</p>
+          </div>
+        </section>
+    </div>
   )
 }
 

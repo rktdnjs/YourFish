@@ -13,17 +13,27 @@ import feed9 from '../images/userfeed/feed9.png'
 import gradient from '../images/userfeed/gradient-left.png'
 import background from '../images/userfeed/back-image.png'
 import '../styles/userfeed.css'
+import { useNavigate } from 'react-router-dom';
 
 const UserFeed = () => {
+    const navigate = useNavigate();
+    const goToLogin = () => {
+        navigate('/Login');
+    };
+    const goToWriteUserFeed = () => {
+        navigate('/WriteUserFeed')
+    }
+    const writeUserFeed = () => {
+        (localStorage.getItem("회원토큰") == "회원토큰" ? goToWriteUserFeed() : goToLogin())
+    }
     const moveToTop = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     }
-
     return (
         <>
             <section className="section">
             <div className="section__userfeed__nav1">
-                <input className="section__userfeed__nav1--write" src={write} type="image"/>
+                <input className="section__userfeed__nav1--write" src={write} onClick={writeUserFeed} type="image"/>
                 <input className="section__userfeed__nav1--top" src={arrow} onClick={moveToTop} type="image"/>
             </div>
             <div className="section__userfeed__background">
