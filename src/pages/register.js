@@ -45,14 +45,14 @@ const Register = () => {
     navigate('/');
   };
 
-  // 계정 정보 중복은 어떻게 해결?
-  // 일단 임시 서버 열어서 사용함
+  //백엔드 서버로 회원가입 POST요청
   const signUp = () => {
-    axios.post("http://localhost:4000/posts" , {
-      userid : id,
-      userpw : pw,
+    axios.post("URL" , {
       username : name,
-      userNickname : nickname
+      password : pw,
+      password2 : repw,
+      email : id,
+      nickname : nickname
     })
     .then((response) => {
       console.log(response);
