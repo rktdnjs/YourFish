@@ -1,10 +1,10 @@
 import React from 'react'
 import axios from 'axios'
-import '../styles/login.css'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import sidefish from '../images/login/fish.png'
 import logo from '../images/userfeed/logo.png'
+import '../styles/login.css'
 
 const Login = () => {
   let [id, setId] = useState('');
