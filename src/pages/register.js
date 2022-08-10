@@ -47,7 +47,7 @@ const Register = () => {
 
   //백엔드 서버로 회원가입 POST요청
   const signUp = () => {
-    axios.post("URL" , {
+    axios.post("http://localhost:4000/posts" , {
       username : name,
       password : pw,
       password2 : repw,

@@ -8,7 +8,11 @@ import Store from './pages/Store';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import MyPage from './pages/mypage/MyPage';
+import Modify from './pages/mypage/Modify';
 import WriteUserFeed from './pages/WriteUserFeed';
+import Board from './pages/mypage/Board';
+import Wishlist from './pages/mypage/WishList';
+import Service from './pages/mypage/Service';
 
 function App() {
   return (
@@ -20,7 +24,11 @@ function App() {
           <Route path='/Store' element={<Store/>}/>
           <Route path='/Login' element={<Login/>}/>
           <Route path='/Register' element={<Register/>}/>
-          <Route path='/MyPAge' element={<MyPage/>}/>
+          <Route path='/MyPage' element={<MyPage/>}/>
+          <Route path='/Modify' element={<Modify/>}/>
+          <Route path='/Board' element={<Board/>}/>
+          <Route path='/Wishlist' element={<Wishlist/>}/>
+          <Route path='/Service' element={<Service/>}/>
           <Route path='/WriteUserFeed' element={<WriteUserFeed/>}/>
         </Routes>
       </Router>

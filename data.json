@@ -251,6 +251,83 @@
       "email": "yourfish@naver.com",
       "password": "yourfish1!",
       "id": 45
+    },
+    {
+      "email": "yourfish@naver.com",
+      "password": "yourfish1!",
+      "id": 46
+    },
+    {
+      "email": "yourfish@naver.com",
+      "password": "yourfish1!",
+      "id": 47
+    },
+    {
+      "username": "강강강",
+      "password": "yourfish2@",
+      "password2": "yourfish2@",
+      "email": "yourfish@naver.com",
+      "nickname": "멋사좋아용",
+      "id": 48
+    },
+    {
+      "username": "",
+      "password": "",
+      "password2": "",
+      "email": "",
+      "nickname": "",
+      "id": 49
+    },
+    {
+      "email": "yourfish@naver.com",
+      "password": "yourfish1!",
+      "id": 50
+    },
+    {
+      "email": "yourfish@naver.com",
+      "password": "yourfish2@",
+      "id": 51
+    },
+    {
+      "username": "김김김",
+      "password": "yourfish1!",
+      "password2": "yourfish1!",
+      "email": "yourfish@naver.com",
+      "nickname": "멋사좋아용",
+      "id": 52
+    },
+    {
+      "email": "yourfish@naver.com",
+      "password": "yourfish1!",
+      "id": 53
+    },
+    {
+      "username": "강강강",
+      "password": "yourfish2@",
+      "password2": "yourfish2@",
+      "email": "yourfish@naver.com",
+      "nickname": "멋사사랑해용",
+      "id": 54
+    },
+    {
+      "email": "yorufish@naver.com",
+      "password": "yourfish1!",
+      "id": 55
+    },
+    {
+      "email": "yorufish@naver.com",
+      "password": "yourfish2@",
+      "id": 56
+    },
+    {
+      "email": "yorufish@naver.com",
+      "password": "yourfish2@",
+      "id": 57
+    },
+    {
+      "email": "yourfish@naver.com",
+      "password": "yourfish2@",
+      "id": 58
     }
   ]
 }
