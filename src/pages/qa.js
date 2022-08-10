@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/section.css'
+import UserDropDown from '../components/UserDropDown'
 
 const QA = () => {
 
@@ -8,6 +9,7 @@ const QA = () => {
         <section>
           <div className="section__main">
             <p>QA게시판!</p>
+            <UserDropDown/>
           </div>
         </section>
     </div>

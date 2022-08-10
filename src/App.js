@@ -25,10 +25,10 @@ function App() {
           <Route path='/Login' element={<Login/>}/>
           <Route path='/Register' element={<Register/>}/>
           <Route path='/MyPage' element={<MyPage/>}/>
-          <Route path='/Modify' element={<Modify/>}/>
-          <Route path='/Board' element={<Board/>}/>
-          <Route path='/Wishlist' element={<Wishlist/>}/>
-          <Route path='/Service' element={<Service/>}/>
+          <Route path='/MyPage/Modify' element={<Modify/>}/>
+          <Route path='/MyPage/Board' element={<Board/>}/>
+          <Route path='/MyPage/Wishlist' element={<Wishlist/>}/>
+          <Route path='/MyPage/Service' element={<Service/>}/>
           <Route path='/WriteUserFeed' element={<WriteUserFeed/>}/>
         </Routes>
       </Router>

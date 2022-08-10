@@ -328,6 +328,11 @@
       "email": "yourfish@naver.com",
       "password": "yourfish2@",
       "id": 58
+    },
+    {
+      "email": "yourfish@naver.com",
+      "password": "yourfish2@",
+      "id": 59
     }
   ]
 }

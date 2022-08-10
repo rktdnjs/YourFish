@@ -5,16 +5,16 @@ import { useNavigate } from 'react-router-dom';
 const MyPage = () => {
   const navigate = useNavigate();
   const goToModify = () => {
-    navigate('/Modify');
+    navigate('/MyPage/Modify');
   };
   const goToBoard = () => {
-    navigate('/Board');
+    navigate('/MyPage/Board');
   };
   const goToWishList = () => {
-    navigate('/WishList');
+    navigate('/MyPage/WishList');
   };
   const goToService = () => {
-    navigate('/Service');
+    navigate('/MyPage/Service');
   };
 
   //임시로 만들어 놓은 버튼
