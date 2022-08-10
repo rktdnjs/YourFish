@@ -3,7 +3,9 @@ import React from 'react'
 const WriteUserFeed = () => {
   return (
     <div>
-      WriteUserFeed
+      <section className='section__main'>
+        WriteUserFeed
+      </section>
     </div>
   )
 }

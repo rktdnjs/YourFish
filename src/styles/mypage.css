@@ -15,10 +15,43 @@
 .section__mypage__box--detail {
     width: 60vmax;
     height: 8vmax;
-    padding: 3vmax 2vmax 3vmax 2vmax;
+    padding: 3vmax 2vmax 3vmax 4vmax;
     background-color: white;
     cursor: pointer;
     font-family: 'SeoulNamsanM';
     border: 0.1vmax solid #E8E8E8;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
 }
 
+.section__mypage__box--detail:hover {
+    background-color:rgba(232, 232, 232, 0.3) ;
+}
+
+.section__mypage__box--detail1 {
+    font-size: 1.5vmax;
+    font-weight: bold;
+    min-width: 10vmax;
+}
+
+.section__mypage__box--detail2 {
+    font-size: 1.3vmax;
+    min-width: 10vmax;
+}
+
+.section__mypage__box--detail3 {
+    font-size: 1.15vmax;
+    color:rgba(0, 0, 0, 0.7);
+}
+
+.section__mypage__box--detail3:after {/*after 가상요소*/
+    display:block;/*a요소를 블록 요소라고 선언*/
+    content: '';/*comtent안은 밑줄 디자인을 위해 비워두세요.*/
+    border-bottom: solid 1px black;
+    transform: scaleX(0);/*크기를 0으로 줌으로써 평상시엔 밑줄 없음*/
+    transition: transform 250ms ease-in-out; /*변형 방식*/
+ }
+ .section__mypage__box--detail3:hover:after {
+    transform: scaleX(1);/*a 속성에 hover시 after를 기존 크기로 변경*/
+ }
