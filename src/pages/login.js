@@ -15,6 +15,7 @@ const Login = () => {
   const pwInput = (e) => {
     setPw(e.target.value)
   }
+
   //아이디 & 비밀번호 유효성 검사
   //아이디에 @가 포함되어있는지, 비밀번호는 8글자 이상일때 disabled된 버튼이 활성화됨
   //이메일 : @를 포함한 영문, 숫자
@@ -28,6 +29,9 @@ const Login = () => {
   const navigate = useNavigate();
   const goToMain = () => {
     navigate('/');
+  };
+  const goToRegister = () => {
+    navigate('/Register');
   };
 
   // 서버 데이터와 입력한 아이디 & 비번이 일치 시 로그인 성공 후 메인화면으로 이동(근데 유지는 아직 x)
@@ -71,7 +75,7 @@ const Login = () => {
   //     console.log(error.response);
   //     alert("이메일 혹은 비밀번호를 확인하세요.")
   //   });
-  // }
+  // } 
 
   return (
     <div>
@@ -96,7 +100,7 @@ const Login = () => {
                 <div className="section__login__center--options">
                     <div className="section__login__center--searchid">아이디 찾기</div>|
                     <div className="section__login__center--searchpw">비밀번호 찾기</div>|
-                    <div className="section__login__center--register">회원가입</div>
+                    <div className="section__login__center--register" onClick={goToRegister}>회원가입</div>
                 </div>
             </div>
           </div>

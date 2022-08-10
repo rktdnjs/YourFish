@@ -125,7 +125,12 @@ section {
     /* 커서 옵션은 나중에 제거 */
     cursor: pointer;
     margin-top: 3%;
-    width: 30%
+    width: 30%;
+    transition: all 0.7s ease-in-out;
+}
+
+.section__userfeed__main__article--feed:hover {
+    transform: scale(1.05);
 }
 
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);

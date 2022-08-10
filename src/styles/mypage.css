@@ -1,0 +1,24 @@
+.section__mypage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__mypage--title {
+    margin-top: 8vmax;
+    margin-bottom: 8vmax;
+    color:#68CCD8;
+    font-size: 2.5vmax;
+    font-weight: bold;
+}
+
+.section__mypage__box--detail {
+    width: 60vmax;
+    height: 8vmax;
+    padding: 3vmax 2vmax 3vmax 2vmax;
+    background-color: white;
+    cursor: pointer;
+    font-family: 'SeoulNamsanM';
+    border: 0.1vmax solid #E8E8E8;
+}
+

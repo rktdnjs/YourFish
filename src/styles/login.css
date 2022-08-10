@@ -34,7 +34,7 @@
     margin-left: 6vmax;
     transition: all 0.7s ease-in-out;
     cursor:auto;
-}
+} 
 
 .section__login__side__image1:hover {
     transform: translate(2vmax);
@@ -61,7 +61,7 @@
 }
 
 .section__login__center--id {
-    margin-top: 12vmax;
+    margin-top: 8vmax;
     font-size: 1vmax;
     font-family: "SeoulNamsanM";
 }

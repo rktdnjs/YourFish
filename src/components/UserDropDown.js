@@ -1,3 +1,4 @@
+// ㅠㅠ 만들었긴 한데 버그가 많아서 네비바에 못합침....
 import React from 'react'
 import user from '../images/userfeed/user.png'
 import '../styles/dropdown.css'

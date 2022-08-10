@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../styles/section.css'
+import '../../styles/mypage.css'
 import { useNavigate } from 'react-router-dom';
 
 const MyPage = () => {
@@ -21,11 +22,30 @@ const MyPage = () => {
   return (
     <div>
         <section>
-          <div className="section__main">
-          <button onClick={goToModify} className="section__login__center__button--cancle">회원정보 수정</button>
-          <button onClick={goToBoard} className="section__login__center__button--cancle">나의 게시물</button>
-          <button onClick={goToWishList} className="section__login__center__button--cancle">찜 목록</button>
-          <button onClick={goToService} className="section__login__center__button--cancle">고객센터</button>
+          <div className="section__mypage section__main">
+            <div className="section__mypage--title">MY PAGE</div>
+            <div className="section__mypage__box">
+              <div onClick={goToModify} className="section__mypage__box--detail">
+                <div class="section__mypage__box--detail1">1</div>
+                <div class="section__mypage__box--detail2">2</div>
+                <div class="section__mypage__box--detail3">3</div>
+              </div>
+              <div onClick={goToBoard} className="section__mypage__box--detail">
+                <div class="section__mypage__box--detail1">1</div>
+                <div class="section__mypage__box--detail2">2</div>
+                <div class="section__mypage__box--detail3">3</div>
+              </div>
+              <div onClick={goToWishList} className="section__mypage__box--detail">
+                <div class="section__mypage__box--detail1">1</div>
+                <div class="section__mypage__box--detail2">1</div>
+                <div class="section__mypage__box--detail3">1</div>
+              </div>
+              <div onClick={goToService} className="section__mypage__box--detail">
+                <div class="section__mypage__box--detail1">1</div>
+                <div class="section__mypage__box--detail2">1</div>
+                <div class="section__mypage__box--detail3">1</div>
+              </div>
+            </div>
           </div>
         </section>
     </div>

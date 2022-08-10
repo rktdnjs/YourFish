@@ -4,7 +4,6 @@ import search from '../images/userfeed/search.png'
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import '../styles/nav.css'
-import UserDropDown from './UserDropDown'
 
 const Nav = () => { 
   const logOut = () => {
