@@ -42,7 +42,14 @@ const Login = () => {
       password : pw,
     })
     .then(response => {
-      // console.log(response)
+      console.log(response)
+    })
+    //오류시 실행
+    .catch(error => {
+      console.log(error.response);
+      // alert("이메일 혹은 비밀번호를 다시 확인하세요.")
+    })
+    .then(() => {
       if(id == localStorage.getItem("userid") && pw == localStorage.getItem("userpw")) {
         alert(`로그인 완료! ${localStorage.getItem("userNickname")}님 어서오세요!!`);
         localStorage.setItem("회원토큰", "회원토큰");
@@ -51,10 +58,8 @@ const Login = () => {
       else {
         alert("이메일 혹은 비밀번호를 다시 확인해주세요.")
       }
-    }).catch(error => {
-      console.log(error.response);
-      alert("이메일 혹은 비밀번호를 다시 확인하세요.")
-    });
+    })
+    ;
   }
 
   // JWT방식(작동 미확인)
