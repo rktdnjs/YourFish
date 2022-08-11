@@ -391,6 +391,32 @@
       "email": "yourfish@naver.com",
       "password": "yourfish1!",
       "id": 70
+    },
+    {
+      "username": "강강강",
+      "password": "yourfish1!",
+      "password2": "yourfish1!",
+      "email": "yourfish@naver.com",
+      "nickname": "멋사사랑해요옹",
+      "id": 71
+    },
+    {
+      "email": "yourfish@naver.com",
+      "password": "yourfish1!",
+      "id": 72
+    },
+    {
+      "username": "강강강",
+      "password": "yourfish2@",
+      "password2": "yourfish2@",
+      "email": "yourfish@naver.com",
+      "nickname": "멋사좋아용오오옹",
+      "id": 73
+    },
+    {
+      "email": "yourfish@naver.com",
+      "password": "yourfish2@",
+      "id": 74
     }
   ],
   "posts": [

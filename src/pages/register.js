@@ -41,8 +41,8 @@ const Register = () => {
   }
   
   const navigate = useNavigate();
-  const goToMain = () => {
-    navigate('/');
+  const goToLogin = () => {
+    navigate('/Login');
   };
 
   //백엔드 서버로 회원가입 POST요청
@@ -62,7 +62,7 @@ const Register = () => {
         localStorage.setItem("username", name);
         localStorage.setItem("userNickname", nickname);
         alert('회원가입이 완료되었습니다! 환영합니다 :)');
-        goToMain(); 
+        goToLogin(); 
       }
     })
     .catch((error) => console.log(error.response));

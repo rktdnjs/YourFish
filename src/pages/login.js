@@ -57,7 +57,7 @@ const Login = () => {
     });
   }
 
-  // JWT방식(작동 미확인)
+  // JWT방식(작동 미확인) 
   // const signIn = () => {
   //   axios.post('http://localhost:4000/posts', {
   //     email : id,
