@@ -23,9 +23,15 @@
     width: 80%;
     height: 5%;
     font-size: 0.68vmax;
+    transition: all 0.5s ease-in-out;
 }
 
-.section__write__contetnt {
+.section__write__title:focus{
+    border : 2px solid gray;
+    box-shadow: 0 1px 20px 0 rgba(78, 78, 78, 0.3);
+}
+
+.section__write__content {
     margin-top: 1vmax;
     width: 80%;
     height: 70%;
@@ -33,6 +39,12 @@
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: lighter;
     resize: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.section__write__content:focus{
+    border : 2px solid gray;
+    box-shadow: 0 1px 20px 0 rgba(78, 78, 78, 0.3);
 }
 
 .section__write__bottom {

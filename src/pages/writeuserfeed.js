@@ -42,15 +42,16 @@ const WriteUserFeed = () => {
   const contentInput = (e) => {
     setContent(e.target.value)
   }
-  console.log(title, content)
-
+  // console.log(title, content)
+  // console.log((title).length)
+  // console.log((content).length)
   return (
     <div>
       <section className='section__main'>
         <div className='section__write__box'>
           <div className='section__write__head'>새 게시물 쓰기</div>
-          <input onKeyUp={titleInput} className='section__write__title' minLength='1' placeholder='제목을 입력하세요'></input>
-          <textarea onKeyUp={contentInput} className='section__write__contetnt' minLength='1' placeholder='내용을 입력하세요'></textarea>
+          <input onKeyUp={titleInput} className='section__write__title' minLength='1' maxLength="50" placeholder='제목을 입력하세요.(50자 이내)'></input>
+          <textarea onKeyUp={contentInput} className='section__write__content' minLength='1' maxLength="1500" placeholder='내용을 입력하세요'></textarea>
           <div className='section__write__bottom'>
             <div onClick={WriteSuccess} className='section__write__bottom--confirm section__write__bottom--detail'>게시</div>
             <div onClick={WriteCancel} className='section__write__bottom--cancel section__write__bottom--detail'>취소</div>

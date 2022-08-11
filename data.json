@@ -417,6 +417,19 @@
       "email": "yourfish@naver.com",
       "password": "yourfish2@",
       "id": 74
+    },
+    {
+      "username": "강강강",
+      "password": "yourfish1!",
+      "password2": "yourfish1!",
+      "email": "yourfish@naver.com",
+      "nickname": "멋사사랑해용",
+      "id": 75
+    },
+    {
+      "email": "yourfish@naver.com",
+      "password": "yourfish1!",
+      "id": 76
     }
   ],
   "posts": [

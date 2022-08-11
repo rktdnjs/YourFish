@@ -5,6 +5,7 @@ import logo from '../images/userfeed/logo.png'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import Loading from '../components/Loading'
 
 const Register = () => {
   let [id, setId] = useState('');

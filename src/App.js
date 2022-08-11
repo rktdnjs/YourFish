@@ -13,6 +13,7 @@ import WriteUserFeed from './pages/WriteUserFeed';
 import Board from './pages/mypage/Board';
 import Wishlist from './pages/mypage/WishList';
 import Service from './pages/mypage/Service';
+import Loading from './components/Loading';
 
 function App() {
   return (
