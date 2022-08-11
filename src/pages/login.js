@@ -37,7 +37,7 @@ const Login = () => {
   // 서버 데이터와 입력한 아이디 & 비번이 일치 시 로그인 성공 후 메인화면으로 이동(근데 유지는 아직 x)
   // 이후 로그인상태를 유지하기 위해선 일종의 토큰정보가 필요할것(localStorage로 임시 구현)
   const signIn = () => {
-    axios.post('http://localhost:4000/posts', {
+    axios.post('http://localhost:4000/users', {
       email : id,
       password : pw,
     })

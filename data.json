@@ -1,5 +1,5 @@
 {
-  "posts": [
+  "users": [
     {
       "id": 1,
       "title": "리덕스 미들웨어를 배워봅시다",
@@ -353,6 +353,51 @@
       "email": "yourfish@naver.com",
       "password": "yourfish2@",
       "id": 63
+    },
+    {
+      "username": "강강강",
+      "password": "yourfish1!",
+      "password2": "yourfish1!",
+      "email": "yourfish@naver.com",
+      "nickname": "멋사사랑해용",
+      "id": 64
+    },
+    {
+      "email": "yourfish@naver.com",
+      "password": "yourfish1!",
+      "id": 65
+    },
+    {
+      "email": "yourfish@naver.com",
+      "password": "yourfihs1!",
+      "id": 66
+    },
+    {
+      "email": "yourfish@naver.com",
+      "password": "yourfihs2@",
+      "id": 67
+    },
+    {
+      "email": "yourfish@naver.com",
+      "password": "yourfifsh2@",
+      "id": 68
+    },
+    {
+      "email": "yourfish@naver.com",
+      "password": "yourfifsh1!",
+      "id": 69
+    },
+    {
+      "email": "yourfish@naver.com",
+      "password": "yourfish1!",
+      "id": 70
+    }
+  ],
+  "posts": [
+    {
+      "number": 1,
+      "title": "팀원분들 언제나 응원해요",
+      "content": "힘들면 쉬면서 하세요"
     }
   ]
 }

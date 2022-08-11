@@ -1,0 +1,71 @@
+.section__write__box {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vmax;
+    width: 50vmax;
+    height: 40vmax;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.3);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__write__head {
+    margin-top: 2vmax;
+    font-size: 1.2vmax;
+    font-weight: bold;
+}
+
+.section__write__title {
+    margin-top: 1vmax;
+    width: 80%;
+    height: 5%;
+    font-size: 0.68vmax;
+}
+
+.section__write__contetnt {
+    margin-top: 1vmax;
+    width: 80%;
+    height: 70%;
+    font-size: 0.75vmax;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: lighter;
+    resize: none;
+}
+
+.section__write__bottom {
+    margin-top: 1.2vmax;
+    display: flex;
+}
+
+.section__write__bottom--detail:after{
+    display:block;/*a요소를 블록 요소라고 선언*/
+    content: '';/*comtent안은 밑줄 디자인을 위해 비워두세요.*/
+    margin-top: 2px;
+    border-bottom: solid 2px rgb(136, 136, 136);
+    transform: scaleX(0);/*크기를 0으로 줌으로써 평상시엔 밑줄 없음*/
+    transition: transform 250ms ease-in-out; /*변형 방식*/
+}
+
+.section__write__bottom--detail:hover:after {
+    transform: scaleX(1);/*a 속성에 hover시 after를 기존 크기로 변경*/
+ }
+
+.section__write__bottom--confirm {
+    margin-right: 8vmax;
+    font-size: 1vmax;
+    font-weight: bold;
+    cursor: pointer;
+    color: #68CCD8;
+}
+
+.section__write__bottom--cancel {
+    margin-left: 8vmax;
+    font-size: 1vmax;
+    font-weight: bold;
+    cursor: pointer;
+    color:red;
+}
+
