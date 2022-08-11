@@ -38,7 +38,7 @@
 .section__write__bottom {
     margin-top: 1.2vmax;
     display: flex;
-}
+} 
 
 .section__write__bottom--detail:after{
     display:block;/*a요소를 블록 요소라고 선언*/
