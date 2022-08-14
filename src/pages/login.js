@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import sidefish from '../images/login/fish.png'
 import logo from '../images/userfeed/logo.png'
 import '../styles/login.css'
+import Swal from 'sweetalert2'
 
 const Login = () => {
   let [id, setId] = useState('');
@@ -44,16 +45,33 @@ const Login = () => {
     .then(response => {
       // console.log(response)
       if(id == localStorage.getItem("userid") && pw == localStorage.getItem("userpw")) {
-        alert(`로그인 완료! ${localStorage.getItem("userNickname")}님 어서오세요!!`);
+        // alert(`로그인 완료! ${localStorage.getItem("userNickname")}님 어서오세요!!`);
+        Swal.fire({
+          icon:'success',
+          title:'로그인 완료!',
+          text:`${localStorage.getItem("userNickname")}님 어서오세요!!`,
+          confirmButtonText:'확인',
+          confirmButtonColor:'#3085d6'
+        })
         localStorage.setItem("회원토큰", "회원토큰");
         goToMain();
       }
       else {
-        alert("이메일 혹은 비밀번호를 다시 확인해주세요.")
+        Swal.fire({
+          icon:'error',
+          title:'흠.....',
+          text:'이메일 혹은 비밀번호를 다시 확인하세요.',
+          confirmButtonText:'확인',
+        })
       }
     }).catch(error => {
       console.log(error.response);
-      alert("이메일 혹은 비밀번호를 다시 확인하세요.")
+      Swal.fire({
+        icon:'error',
+        title:'흠.....',
+        text:'이메일 혹은 비밀번호를 다시 확인하세요.',
+        confirmButtonText:'확인',
+      })
     });
   }
 

@@ -19,8 +19,8 @@ const WriteUserFeed = () => {
         // 오류시 실행
         .catch((error) => console.log(error.response))
         // 무조건 실행
-        .then((respopnse) => {
-          alert("게시물이 성공적으로 등록되었습니다!!")
+        .then((response) => {
+          alert("게시물 작성 완료!")
           navigate('/');
         })
       }

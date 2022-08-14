@@ -131,7 +131,7 @@ section {
 
 .section__userfeed__main__article--feed:hover {
     transform: scale(1.05);
-}
+} 
 
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 .notosanskr * { 

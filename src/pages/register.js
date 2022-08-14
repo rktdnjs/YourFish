@@ -5,7 +5,7 @@ import logo from '../images/userfeed/logo.png'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
-import Loading from '../components/Loading'
+import Swal from 'sweetalert2'
 
 const Register = () => {
   let [id, setId] = useState('');
@@ -45,7 +45,7 @@ const Register = () => {
   const goToLogin = () => {
     navigate('/Login');
   };
-
+  
   //백엔드 서버로 회원가입 POST요청
   const signUp = () => {
     axios.post("http://localhost:4000/users" , {
@@ -62,7 +62,13 @@ const Register = () => {
         localStorage.setItem("userpw", pw);
         localStorage.setItem("username", name);
         localStorage.setItem("userNickname", nickname);
-        alert('회원가입이 완료되었습니다! 환영합니다 :)');
+        Swal.fire({
+          icon:'success',
+          title:'회원가입 완료!!',
+          text:"저희 사이트에 오신것을 환영해요 :)",
+          confirmButtonText:'확인',
+          confirmButtonColor:'#3085d6'
+        })
         goToLogin(); 
       }
     })

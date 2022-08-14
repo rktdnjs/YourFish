@@ -3,6 +3,7 @@ import '../../styles/modify.css'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import Swal from 'sweetalert2'
 
 const Modify = () => {
   let [id, setId] = useState('');
@@ -44,8 +45,9 @@ const Modify = () => {
   };
 
   //백엔드 서버로 나중에 PUT으로 변경(임시로 post)
+  //일단 임시로 users에다가 연결시켜놓음
   const signUp = () => {
-    axios.post("http://localhost:4000/posts" , {
+    axios.post("http://localhost:4000/users" , {
       username : name,
       password : pw,
       password2 : repw,
@@ -59,7 +61,12 @@ const Modify = () => {
         localStorage.setItem("userpw", pw);
         localStorage.setItem("username", name);
         localStorage.setItem("userNickname", nickname);
-        alert('회원정보 수정이 완료되었습니다!');
+        Swal.fire({
+          icon:'success',
+          text:"회원정보 수정 완료!!!",
+          confirmButtonText:'확인',
+          confirmButtonColor:'#3085d6'
+        })
         goToMyPage(); 
       }
     })
@@ -93,7 +100,7 @@ const Modify = () => {
                   </div>
               </div>
           </div>
-      </section>
+      </section> 
     </div>
   )
 }

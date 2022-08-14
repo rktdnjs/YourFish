@@ -4,11 +4,18 @@ import search from '../images/userfeed/search.png'
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import '../styles/nav.css'
+import Swal from 'sweetalert2'
 
 const Nav = () => { 
   const logOut = () => {
     localStorage.removeItem("회원토큰");
-    alert("로그아웃 완료! 우리 다음에 또 만나요 :)");
+    Swal.fire({
+        icon:'success',
+        title:'로그아웃 완료!',
+        text:'우리 다음에 또 만나요 :) ',
+        confirmButtonText:'확인',
+        confirmButtonColor:'#3085d6'
+      })
     goToMain();
   }
   
