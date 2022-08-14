@@ -3,6 +3,7 @@ import '../styles/writeuserfeed.css'
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios'
+import Swal from 'sweetalert2'
 
 const WriteUserFeed = () => {
   const navigate = useNavigate();
@@ -20,13 +21,23 @@ const WriteUserFeed = () => {
         .catch((error) => console.log(error.response))
         // 무조건 실행
         .then((response) => {
-          alert("게시물 작성 완료!")
+          Swal.fire({
+            icon:'success',
+            text:'게시물 작성 완료!!',
+            confirmButtonText:'확인',
+            confirmButtonColor:'#3085d6'
+          })
           navigate('/');
         })
       }
     }
     else {
-      alert("제목과 본문은 최소 1글자 이상이어야 합니다.")
+      Swal.fire({
+        icon:'error',
+        text:'제목과 본문은 최소 1글자 이상이어야 합니다.',
+        confirmButtonText:'확인',
+        confirmButtonColor:'#3085d6'
+      })
     }
   };
   const WriteCancel = () => {
