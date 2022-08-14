@@ -14,6 +14,7 @@ import gradient from '../images/userfeed/gradient-left.png'
 import background from '../images/userfeed/back-image.png'
 import '../styles/userfeed.css'
 import { useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2'
 
 const UserFeed = () => {
     const navigate = useNavigate();
@@ -24,7 +25,13 @@ const UserFeed = () => {
         navigate('/WriteUserFeed')
     }
     const writeUserFeed = () => {
-        (localStorage.getItem("회원토큰") == "회원토큰" ? goToWriteUserFeed() : goToLogin())
+        (localStorage.getItem("회원토큰") == "회원토큰" ? goToWriteUserFeed() : 
+        Swal.fire({
+            icon:'info',
+            text:'로그인 먼저 해주세요 ><',
+            confirmButtonText:'확인',
+            confirmButtonColor:'#3085d6'
+          }, goToLogin()))
     }
     const moveToTop = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
