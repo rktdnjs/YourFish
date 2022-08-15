@@ -41,6 +41,7 @@ const WriteUserFeed = () => {
       })
     }
   };
+
   const WriteCancel = () => {
     navigate('/');
   };
@@ -49,6 +50,7 @@ const WriteUserFeed = () => {
   const [content, setContent] = useState('');
   const [image, setImage] = useState(null);
   const imgRef = useRef();
+
   // 둘다 string값으로 반환
   const titleInput = (e) => {
     setTitle(e.target.value)
@@ -58,8 +60,7 @@ const WriteUserFeed = () => {
     setContent(e.target.value)
   }
 
-  const inputImage = (e) => {
-    console.log(e);
+  const inputImage = () => {
     const reader = new FileReader();
     const file = imgRef.current.files[0];
 
@@ -69,10 +70,11 @@ const WriteUserFeed = () => {
     }
   }
 
-  const onClickFileBtn = (e) => {
+  const onClickFileBtn = () => {
     imgRef.current.click();
   };
 
+  console.log(title, content, image);
   // console.log(title, content)
   // console.log((title).length)
   // console.log((content).length)
