@@ -1,0 +1,119 @@
+.section__board {
+    width: 100%;
+    height: 100%;
+    background-color: #EAFCFF;
+}
+
+.section__board__center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__board__center--title {
+    margin-top: 8vmax;
+    font-size: 3vmax;
+    text-align: center;
+    font-weight: bold;
+    cursor:auto;
+    color: #68CCD8;
+}
+
+.section__board__category {
+    display: flex;
+    margin-right: 60vmax;
+    margin-top: 4vmax;
+}
+
+.section__board__category2 {
+    margin-left: 2vmax;
+}
+
+.section__board__qa {
+    width: 100%;
+    height: 1500px;
+    padding: 3vmax 5vmax 3vmax 5vmax;
+    margin-right: auto;
+    margin-left: auto;
+    background-color:transparent;
+}
+
+.section__board__qa__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__board__qa__box2 {
+    margin-top: 3vmax;
+}
+
+.section__board__qa--atitle {
+    min-width: 100%;
+    font-family: 'SeoulNamsanM';
+    font-weight: bold;
+    font-size: 1vmax;
+    margin-bottom: 1vmax;
+}
+
+.section__board__qa__acontent--top {
+    border-top: 2px solid rgba(0, 0, 0, 50%);
+    border-bottom: 2px solid rgba(0, 0, 0, 50%);
+    padding: 0.8vmax 0 0.8vmax 0;
+    font-family: 'SeoulNamsanM';
+    min-width: 100%;
+    display: flex;
+}
+
+.section__board__qa__acontent--top1 {
+    min-width: 50vmax;
+    padding-left: 25vmax;
+}
+
+.section__board__qa__acontent--top2 {
+    min-width: 5vmax;
+    padding-left: 1vmax;
+}
+
+.section__board__qa__acontent--top3 {
+    padding-left: 15vmax;
+}
+
+.section__board__qa__acontent--bottom {
+    padding: 0.8vmax 0 0.8vmax 0;
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+    font-family: 'Kodchasan', sans-serif;
+    border-bottom: 2px solid rgba(0, 0, 0, 30%);
+}
+
+
+.section__board__qa__acontent--bottom1 {
+    padding-left: 1vmax;
+    min-width: 50vmax;
+    font-weight: bold;
+}
+
+.section__board__qa__acontent--bottom1:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.section__board__qa__acontent--bottom2 {
+    min-width: 5vmax;
+    padding-left: 2vmax;
+}
+
+.section__board__qa__acontent--bottom3 {
+    padding-left: 14.4vmax;
+}
+
+@font-face {
+    font-family: 'SeoulNamsanM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulNamsanM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan&display=swap');
