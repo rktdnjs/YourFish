@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import '../styles/writeuserfeed.css'
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios'
 import Swal from 'sweetalert2'
+import basic from '../images/writepage/image.png'
 
 const WriteUserFeed = () => {
   const navigate = useNavigate();
@@ -44,23 +45,49 @@ const WriteUserFeed = () => {
     navigate('/');
   };
 
-  let [title, setTitle] = useState('');
-  let [content, setContent] = useState('');
+  const [title, setTitle] = useState('');
+  const [content, setContent] = useState('');
+  const [image, setImage] = useState(null);
+  const imgRef = useRef();
   // 둘다 string값으로 반환
   const titleInput = (e) => {
     setTitle(e.target.value)
   }
+
   const contentInput = (e) => {
     setContent(e.target.value)
   }
+
+  const inputImage = (e) => {
+    console.log(e);
+    const reader = new FileReader();
+    const file = imgRef.current.files[0];
+
+    reader.readAsDataURL(file);
+    reader.onloadend = () => {
+      setImage(reader.result);
+    }
+  }
+
+  const onClickFileBtn = (e) => {
+    imgRef.current.click();
+  };
+
   // console.log(title, content)
   // console.log((title).length)
   // console.log((content).length)
+
   return (
     <div>
       <section className='section__main'>
         <div className='section__write__box'>
-          <div className='section__write__head'>새 게시물 쓰기</div>
+          <div className='section__write__head'>
+            <div className='section__wrtie__head--title'>피드 새 게시물 쓰기</div>
+            <div className='section__write__img__uploader'>
+              <img className='section__write__img' src={image ? image : basic} onClick={onClickFileBtn} style={{cursor:'pointer'}}/>
+              <input type="file" ref={imgRef} onChange={inputImage} src={image} style={{display:'none'}}/>
+            </div>
+          </div>
           <input onKeyUp={titleInput} className='section__write__title' minLength='1' maxLength="50" placeholder='제목을 입력하세요.(50자 이내)'></input>
           <textarea onKeyUp={contentInput} className='section__write__content' minLength='1' maxLength="1500" placeholder='내용을 입력하세요'></textarea>
           <div className='section__write__bottom'>

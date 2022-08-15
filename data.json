@@ -919,6 +919,16 @@
       "email": "yourfish@naver.com",
       "nickname": "멋사사랑행",
       "id": 154
+    },
+    {
+      "email": "yourfish@naver.com",
+      "password": "yourfish2@",
+      "id": 155
+    },
+    {
+      "email": "yourfish@naver.com",
+      "password": "yourfish1!",
+      "id": 156
     }
   ],
   "posts": [

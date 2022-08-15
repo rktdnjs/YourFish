@@ -2,8 +2,9 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 10vmax;
+    padding: 1vmax 1vmax 2vmax 1vmax;
     width: 50vmax;
-    height: 40vmax;
+    height: 45vmax;
     border-radius: 10px;
     box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.3);
     background-color: white;
@@ -14,14 +15,39 @@
 
 .section__write__head {
     margin-top: 2vmax;
+    min-width: 80%;
     font-size: 1.2vmax;
     font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.section__write__img {
+    width: 6vmax;
+    height: 6vmax;
+}
+
+/* 이 친구는 안씀 */
+.section__write__upload--btn {
+    width: 3vmax;
+    height: 1vmax;
+    cursor: pointer;
+    background-color: #68CCD8;
+    border: transparent;
+    transition: all 0.5s ease;
+    font-family: 'SeoulNamsanM';
+    font-size: 0.5vmax;
+}
+
+.section__write__upload--btn:hover {
+   background-color: aquamarine;
 }
 
 .section__write__title {
-    margin-top: 1vmax;
+    margin-top: 2vmax;
     width: 80%;
-    height: 5%;
+    height: 40px;
     font-size: 0.68vmax;
     transition: all 0.5s ease-in-out;
 }
@@ -81,3 +107,9 @@
     color:red;
 }
 
+@font-face {
+    font-family: 'SeoulNamsanM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulNamsanM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
