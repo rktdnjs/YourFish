@@ -1,0 +1,13 @@
+.section__mypage__service--title {
+    margin-top: 8vmax;
+    margin-bottom: 8vmax;
+    text-align: center;
+    color:#68CCD8;
+    font-size: 2.5vmax;
+    font-weight: bold;
+}
+
+.section__mypage__service--content {
+    padding-left: 4vmax;
+    padding-right: 4vmax;
+}
