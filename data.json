@@ -929,6 +929,27 @@
       "email": "yourfish@naver.com",
       "password": "yourfish1!",
       "id": 156
+    },
+    {
+      "headers": {
+        "Content-Type": "multipart/form-data"
+      },
+      "data": {},
+      "id": 157
+    },
+    {
+      "headers": {
+        "Content-Type": "multipart/form-data"
+      },
+      "data": {},
+      "id": 158
+    },
+    {
+      "headers": {
+        "Content-Type": "multipart/form-data"
+      },
+      "data": {},
+      "id": 159
     }
   ],
   "posts": [

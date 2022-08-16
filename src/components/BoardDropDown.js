@@ -14,9 +14,9 @@ const BoardDropDown = () => {
 
   return (
     <div>
-        <div class="dropdown">
-		    <button class="dropdown-button">카테고리</button>
-		    <div class="dropdown-content">
+        <div className="dropdown">
+		    <button className="dropdown-button">카테고리</button>
+		    <div className="dropdown-content">
 		    	<p onClick={goToBoardUserFeed}>유저피드</p>
 		    	<p onClick={goToBoardQA}>질문게시판</p>
 		    </div>

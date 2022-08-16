@@ -31,7 +31,7 @@ const Nav = () => {
             <Link to="/"><img className="header__title" src={logo}/></Link>
            
             <div className="header__center">
-                <form className="header__form" onsubmit="return false">
+                <form className="header__form">
                     <input className="header__input--text" placeholder="검색어를 입력해주세요!"/>
                     <Link to="/Search"><input className="header__input--button" src={search} type="image"/></Link>
                 </form>

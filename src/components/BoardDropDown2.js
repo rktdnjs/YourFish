@@ -6,9 +6,9 @@ const BoardDropDown2 = () => {
   
     return (
       <div>
-          <div class="dropdown">
-              <button class="dropdown-button">정렬기준</button>
-              <div class="dropdown-content">
+          <div className="dropdown">
+              <button className="dropdown-button">정렬기준</button>
+              <div className="dropdown-content">
                   <p>최신순</p>
                   <p>오래된순</p>
               </div>
