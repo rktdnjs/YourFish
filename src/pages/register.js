@@ -69,7 +69,7 @@ const Register = () => {
           confirmButtonText:'확인',
           confirmButtonColor:'#3085d6'
         })
-        goToLogin(); 
+        goToLogin();  
       }
     })
     .catch((error) => console.log(error.response));

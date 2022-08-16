@@ -27,7 +27,7 @@ const Login = () => {
   const changeButton = () => {
     (emailValidation.test(id.trim())) && (pwValidation.test(pw.trim())) ? setButton(false) :setButton(true);
   }
-  const navigate = useNavigate();
+  const navigate = useNavigate(); 
   const goToMain = () => {
     navigate('/');
   };

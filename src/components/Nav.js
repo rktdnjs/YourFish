@@ -57,7 +57,7 @@ const Nav = () => {
                         <Link to="/MyPage" style={{textDecoration:'none', color:'inherit'}}>마이페이지</Link>
                     :   <Link to="/Register" style={{textDecoration:'none', color:'inherit'}}>회원가입</Link>}</span>
                     </button>
-                </li>
+                </li> 
             </div>
         </div>
         </header>
