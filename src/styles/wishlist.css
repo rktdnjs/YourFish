@@ -1,0 +1,32 @@
+.section__mypage__wishlist--title {
+    margin-top: 8vmax;
+    margin-bottom: 8vmax;
+    text-align: center;
+    color:#68CCD8;
+    font-size: 2.5vmax;
+    font-weight: bold;
+}
+
+.section__mypage__wishlist--contents {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4vmax;
+}
+
+.section__mypage__wishlist--contents--like {
+    width: 4vmax;
+    cursor: pointer;
+    margin-bottom: 1vmax;
+}
+
+.section__mypage__wishlist--contents--text {
+    font-size: 1vmax;
+    margin-bottom: 1vmax;
+    color: rgba(0, 0, 0, 30%);
+    font-weight: bold;
+}
+
+.section__mypage__wishlist--contents--sample {
+    width: 13vmax;
+    cursor: pointer;
+}
