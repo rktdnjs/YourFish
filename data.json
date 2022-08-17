@@ -1076,6 +1076,11 @@
       "email": "yourfish@naver.com",
       "nickname": "멋사화이팅팅",
       "id": 190
+    },
+    {
+      "email": "yourfish@naver.com",
+      "password": "yourfish1!",
+      "id": 191
     }
   ],
   "posts": [

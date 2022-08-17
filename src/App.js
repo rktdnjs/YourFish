@@ -3,6 +3,7 @@ import React from 'react';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Nav from './components/Nav';
 import UserFeed from './pages/UserFeed';
+// import UserFeedDetail from './pages/UserFeedDetail'; 상세페이지
 import QA from './pages/QA';
 import Store from './pages/Store';
 import Login from './pages/Login';
@@ -21,6 +22,7 @@ function App() {
         <Nav/>
         <Routes>
           <Route path='/' element={<UserFeed/>}/>
+          {/* <Route path='/UserFeed/Detail/:id' element={<UserFeedDetail/>}/> */}
           <Route path='/QA' element={<QA/>}/>
           <Route path='/Store' element={<Store/>}/>
           <Route path='/Login' element={<Login/>}/>
