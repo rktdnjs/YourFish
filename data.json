@@ -1044,6 +1044,38 @@
     },
     {
       "id": 185
+    },
+    {
+      "username": "강강강",
+      "password": "yourfish1!",
+      "password2": "yourfish1!",
+      "email": "yourfish@naver.com",
+      "nickname": "멋사사랑행",
+      "id": 186
+    },
+    {
+      "username": "강강강",
+      "password": "yourfish1!",
+      "password2": "yourfish1!",
+      "email": "yourfish@naver.com",
+      "nickname": "멋사사랑해욤",
+      "id": 187
+    },
+    {
+      "email": "yourfish@naver.com",
+      "password": "yourfish1!",
+      "id": 188
+    },
+    {
+      "id": 189
+    },
+    {
+      "username": "김김김",
+      "password": "yourfish2@",
+      "password2": "yourfish2@",
+      "email": "yourfish@naver.com",
+      "nickname": "멋사화이팅팅",
+      "id": 190
     }
   ],
   "posts": [

@@ -1,3 +1,4 @@
+// 이 친구는 만들어 놓긴 했는데 안 씀 ㅠ
 import React from 'react'
 import { HashLoader } from 'react-spinners'
 import '../styles/loading.css'

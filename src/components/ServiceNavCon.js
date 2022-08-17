@@ -1,3 +1,4 @@
+// 이 친구도 마이페이지 = Service 탭에 들어가는 친구(임시)
 import Accordion from 'react-bootstrap/Accordion';
 
 function ServiceNavCon() {

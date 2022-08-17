@@ -17,7 +17,6 @@ const MyPage = () => {
     navigate('/MyPage/Service');
   };
 
-  //임시로 만들어 놓은 버튼
   return (
     <div>
         <section>

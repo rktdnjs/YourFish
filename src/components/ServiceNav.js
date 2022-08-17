@@ -1,3 +1,4 @@
+// 이 친구는 마이페이지 = Service 탭에 들어가는 친구(임시)
 import Nav from 'react-bootstrap/Nav';
 import ServiceNavCon from './ServiceNavCon';
 import { useState } from 'react';

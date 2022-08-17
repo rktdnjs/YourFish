@@ -44,8 +44,8 @@ const Modify = () => {
     navigate('/MyPage');
   };
 
-  //백엔드 서버로 나중에 PUT으로 변경(임시로 post)
-  //일단 임시로 users에다가 연결시켜놓음
+  //백엔드 서버로 나중에 PUT으로 변경(임시로 현재는 axios.post)
+  //나중에 백엔드 서버 URL에 연결!
   const signUp = () => {
     axios.post("http://localhost:4000/users" , {
       username : name,
