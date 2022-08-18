@@ -2,7 +2,7 @@ import React from 'react'
 import '../../styles/board.css'
 import feed1 from '../../images/userfeed/feed1.png'
 import BoardDropDown from '../../components/BoardDropDown'
-import BoardDropDown2 from './../../components/BoardDropDown2';
+import BoardDropDown2 from '../../components/BoardDropDown2';
 
 const Board = () => {
 

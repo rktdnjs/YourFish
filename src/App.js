@@ -13,7 +13,7 @@ import MyPage from './pages/mypage/MyPage';
 import Modify from './pages/mypage/Modify';
 import WriteUserFeed from './pages/WriteUserFeed';
 import Board from './pages/mypage/Board';
-import BoardQA from './pages/mypage/category/BoardQA';
+import BoardQA from './pages/mypage/Category/BoardQA';
 import Wishlist from './pages/mypage/WishList';
 import Service from './pages/mypage/Service';
 
