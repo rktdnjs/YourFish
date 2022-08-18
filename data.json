@@ -1081,6 +1081,21 @@
       "email": "yourfish@naver.com",
       "password": "yourfish1!",
       "id": 191
+    },
+    {
+      "email": "yourfish@naver.com",
+      "password": "yourfish1!",
+      "id": 192
+    },
+    {
+      "email": "yourfish@naver.com",
+      "password": "yourfish1!",
+      "id": 193
+    },
+    {
+      "email": "yourfish@naver.com",
+      "password": "yourfish2@",
+      "id": 194
     }
   ],
   "posts": [

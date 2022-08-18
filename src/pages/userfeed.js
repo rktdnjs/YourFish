@@ -24,6 +24,10 @@ const UserFeed = () => {
     const goToWriteUserFeed = () => {
         navigate('/WriteUserFeed')
     }
+    const goToUserFeedDetailSample = () => {
+        navigate('/UserFeed/Detail/9')
+    }
+
     const writeUserFeed = () => {
         (localStorage.getItem("회원토큰") == "회원토큰" ? goToWriteUserFeed() : 
         Swal.fire({
@@ -65,7 +69,7 @@ const UserFeed = () => {
                     <img className="section__userfeed__main__article--feed" src={feed6}/>
                     <img className="section__userfeed__main__article--feed" src={feed7}/>
                     <img className="section__userfeed__main__article--feed" src={feed8}/>
-                    <img className="section__userfeed__main__article--feed" src={feed9}/>
+                    <img onClick={goToUserFeedDetailSample} className="section__userfeed__main__article--feed" src={feed9}/>
                 </div>
             </div>
             </section>

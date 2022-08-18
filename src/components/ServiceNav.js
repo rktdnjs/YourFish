@@ -2,6 +2,7 @@
 import Nav from 'react-bootstrap/Nav';
 import ServiceNavCon from './ServiceNavCon';
 import { useState } from 'react';
+import '../styles/service.css'
 
 function ServiceNav() {
     const [tab, setTab] = useState(0);
@@ -35,10 +36,28 @@ function TabContent(props) {
         )
     }
     else if(props.tab === 1) {
-        return (<div>1:1문의내용 상세내용</div>)
+        return (
+        <div>
+          <div className='qa'>
+          <div className='qatype'>문의 유형</div>
+          <input className='qatitle' placeholder='제목'/>
+          <textarea className='qacontent' placeholder='문의 내용'/>
+          <div className='qawarningtext'>0자 / 최대 500자</div>
+          <div className='qa__wrap'>
+            <div className='qa__wrap--upload'></div>
+            <div className='qa__wrap--uploadbtn'>첨부파일</div>
+          </div>
+          <div className='qasubmbit'>제출하기</div>
+          </div>
+        </div>
+        )
     }
     else if(props.tab === 2) {
-        return (<div>나의 문의내용 상세내용</div>)
+        return (
+        <div>
+        나의 문의내용 상세내용
+        </div>
+        )
     }
 }
 

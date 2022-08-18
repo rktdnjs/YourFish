@@ -2,12 +2,22 @@ import React from 'react'
 import thumbnail from '../images/userfeed/thumbnail.jpg'
 import profile from '../images/userfeed/user.png'
 import Feed from './Feed'
+import { useState } from 'react'
 
 // 피드 하나하나가 모여 유저피드 메인글들이 된다.
 // 이 친구는 이제 UserFeed 페이지에서 사용함(예시글들을 대체)
 
 const Feeds = () => {
-  // DB로부터 데이터 fetch를 해서 얻은 데이터(게시물 목록)를 feedDate라고 가정
+  // 피드 데이터 DB로부터 요청을 보내 받아오는 코드
+  // const [feedData, setFeedData] = useState([]);
+  // const getFeedData = () => {
+  //     axios.get(`URL주소/userfeed}(대략 이런 느낌의 URL, 예시입니다)`)
+  //     .then((response) => {
+  //         setFeedData(response.data);
+  //     })
+  // }
+
+  // DB로부터 데이터 fetch를 해서 얻은 데이터(게시물 목록)를 feedDate라고 가정, 예시데이터
   const feedData = [
     {
       id:1,

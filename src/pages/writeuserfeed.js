@@ -139,7 +139,7 @@ const WriteUserFeed = () => {
           </div>
         </div>
       </section>
-    </div>
+    </div> 
   )
 }
 
