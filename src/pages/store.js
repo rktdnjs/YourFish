@@ -1,7 +1,10 @@
 import React from 'react'
 import '../styles/section.css'
+import thumbnail from '../images/userfeed/thumbnail.jpg'
+import profile from '../images/userfeed/user.png'
 
 const Store = () => {
+
   return (
     <div>
         <section>

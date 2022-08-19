@@ -15,8 +15,42 @@ import background from '../images/userfeed/back-image.png'
 import '../styles/userfeed.css'
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2'
+import thumbnail from '../images/userfeed/thumbnail.jpg'
+import profile from '../images/userfeed/user.png'
 
 const UserFeed = () => {
+    const feedData = [ 
+        {
+          id:1,
+          img : thumbnail,
+          title : '제목1',
+          content : '본문1',
+          userprofile : profile,
+          username : '카리나1',
+          replcount : '3',
+        },
+        {
+          id:2,
+          img : thumbnail,
+          title : '제목2',
+          content : '본문2',
+          userprofile : profile,
+          username : '카리나2',
+          replcount : '30',
+        },
+        {
+          id:3,
+          img : thumbnail,
+          title : '제목3',
+          content : '본문3',
+          userprofile : profile,
+          username : '카리나3',
+          replcount : '31',
+        },
+      ];
+
+    console.log(feedData);
+
     const navigate = useNavigate();
     const goToLogin = () => {
         navigate('/Login');
@@ -57,9 +91,7 @@ const UserFeed = () => {
             </div>
 
             <div className="section__userfeed__main">
-                <div className="section__userfeed__main--head">
-                    최신 게시글
-                </div>
+                <div className="section__userfeed__main--head">최신 게시글</div>
                 <div className="section__userfeed__main__article">
                     <img className="section__userfeed__main__article--feed" src={feed1}/>
                     <img className="section__userfeed__main__article--feed" src={feed2}/>

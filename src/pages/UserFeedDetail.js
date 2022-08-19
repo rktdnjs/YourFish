@@ -1,4 +1,6 @@
 import React from 'react'
+import bookmark from '../images/userfeed/bookmark.png'
+import repl from '../images/userfeed/repl.png'
 
 const UserFeedDetail = ({thumbnail, title, content, userprofile ,username, replcount, repls}) => {
   return (

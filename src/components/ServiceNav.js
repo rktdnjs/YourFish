@@ -53,7 +53,7 @@ function TabContent(props) {
       .then(() => {
         Swal.fire({
           icon:'success',
-          text:'게시물 작성 완료!!',
+          text:'문의글 작성 완료!!',
           confirmButtonText:'확인',
           confirmButtonColor:'#3085d6'
         })
