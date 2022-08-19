@@ -68,7 +68,7 @@ const UserFeedDetailSample = () => {
                           <div className='feeds__detailbox__top__center__box__replwrap__box__bottom--answer'>답글 쓰기</div>
                         </div>
                       </div>
-                    </div>
+                    </div> 
                     
                     <div className='feeds__detailbox__center__rightbox__replwrap replanswer'>
                       <img className='feeds__detailbox__center__rightbox__replwrap--profile' src={profile} />

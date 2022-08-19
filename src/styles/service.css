@@ -92,4 +92,118 @@
     display : flex;
     justify-content : center;
     align-items : center;
+    cursor: pointer;
+}
+
+.myqa__box {
+    margin-top: 5%;
+}
+
+.myqa__box__waitbox {
+    width: 100%;
+    display: flex;
+    align-items : center;
+    padding-bottom: 1%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.myqa__box__waitbox--title {
+    display: flex;
+    justify-content : center;
+    align-items : center;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 8%;
+    height: 40px;
+    font-weight: bold;
+    color: white;
+    border-radius: 15px;
+}
+
+.myqa__box__waitbox--content {
+    padding-left: 1%;
+    width: 86%;
+}
+
+.myqa__box__waitbox--date {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.myqa__box__completebox {
+    width: 100%;
+    display: flex;
+    align-items : center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.myqa__box__completebox--title {
+    display: flex;
+    justify-content : center;
+    align-items : center;
+    background-color: #68CCD8; ;
+    width: 8%;
+    height: 40px;
+    font-weight: bold;
+    color: white;
+    border-radius: 15px;
+}
+
+.myqa__box__completebox--content {
+    padding-left: 1%;
+    width: 86%;
+}
+
+.myqa__box__completebox--date {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.myqa__box__qbox {
+    display: flex;
+    flex-direction: column;
+    padding: 2% 2% 4% 2%;
+    background-color: rgba(233, 233, 233, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.myqa__box__qbox--title {
+    font-weight: bold;
+    padding-bottom: 2%;
+    font-size: 20px;
+}
+
+.myqa__box__qbox--content {
+    font-size: 18px;
+}
+
+.myqa__box__abox {
+    display: flex;
+    flex-direction: column;
+    padding: 2% 0% 4% 2%;
+    background-color: rgba(233, 233, 233, 0.3);
+}
+
+.myqa__box__abox__top {
+    display: flex;
+}
+
+.myqa__box__abox__top--title {
+    width: 94%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #68CCD8;
+    padding-bottom: 2%;
+}
+
+.myqa__box__abox__top--date {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.myqa__box__abox__top--content {
+    padding-bottom: 2%;
+    font-size: 20px;
+}
+
+.myqa__box__abox--content {
+    font-size: 18px;
 }
