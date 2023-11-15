@@ -12,6 +12,12 @@
 
 실행은 `yarn start`를 통해 할 수 있습니다 :)
 
+### 원본 Repo
+
+```
+https://github.com/aquariumProject/aquarium
+```
+
 ---------------
 
 실행하고 나서 무수히 많은 에러들이 반겨줄 때가 있는데,
